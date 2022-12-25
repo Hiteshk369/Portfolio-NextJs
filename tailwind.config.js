@@ -6,11 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        poppins : 'poppins',
-      }
+      fontFamily: {
+        poppins: "poppins",
+      },
     },
   },
   plugins: [],
- 
-}
+};

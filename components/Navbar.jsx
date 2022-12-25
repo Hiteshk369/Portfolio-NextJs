@@ -8,38 +8,45 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
 
   const router = useRouter();
 
-  useEffect(()=>{
-    if(router.asPath === '/goodfoodproject'){
-      setNavBg('transparent')
-      setLinkColor('#ecf0f3')
-    }else{
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937')
+  useEffect(() => {
+    if (router.asPath === "/goodfoodproject") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
     }
-  },[router])
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     const handleShadow = () => {
-      if(window.scrollY >= 90) {
+      if (window.scrollY >= 90) {
         setShadow(true);
-      }else{
+      } else {
         setShadow(false);
       }
     };
-    window.addEventListener('scroll',handleShadow)
-  },[])
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   return (
-    <div style={{backgroundColor : `${navBg}`}} className={shadow ? "fixed shadow-xl w-full h-20 z-[150]" : "fixed w-full  h-20 z-[150]"}>
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed shadow-xl w-full h-20 z-[150]"
+          : "fixed w-full  h-20 z-[150]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           alt="/"
@@ -48,7 +55,7 @@ const Navbar = () => {
           height="50"
         />
         <div>
-          <ul style={{color : `${linkColor}`}} className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:text-[#dc143c] hover:font-bold  font-medium font-poppins">
                 Home
@@ -75,7 +82,11 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} style={{color : `${linkColor}`}} className="md:hidden cursor-pointer">
+          <div
+            onClick={handleNav}
+            style={{ color: `${linkColor}` }}
+            className="md:hidden cursor-pointer"
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -111,27 +122,27 @@ const Navbar = () => {
           </div>
           <div className="mt-16 flex flex-col py-4">
             <ul className="">
-              <Link href="/#home" onClick={()=>setNav(false)}>
+              <Link href="/#home" onClick={() => setNav(false)}>
                 <li className="my-6 text-base font-poppins font-medium">
                   HOME
                 </li>
               </Link>
-              <Link href="/#about" onClick={()=>setNav(false)}>
+              <Link href="/#about" onClick={() => setNav(false)}>
                 <li className="my-6 text-base font-poppins font-medium">
                   ABOUT
                 </li>
               </Link>
-              <Link href="/#skills" onClick={()=>setNav(false)}>
+              <Link href="/#skills" onClick={() => setNav(false)}>
                 <li className="my-6 text-base font-poppins font-medium">
                   SKILLS
                 </li>
               </Link>
-              <Link href="/#projects" onClick={()=>setNav(false)}>
+              <Link href="/#projects" onClick={() => setNav(false)}>
                 <li className="my-6 text-base font-poppins font-medium">
                   PROJECTS
                 </li>
               </Link>
-              <Link href="/#contact" onClick={()=>setNav(false)}>
+              <Link href="/#contact" onClick={() => setNav(false)}>
                 <li className="my-6 text-base font-poppins font-medium">
                   CONTACT
                 </li>
@@ -142,21 +153,32 @@ const Navbar = () => {
                 Let&apos;s Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
-                  <FaInstagram />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
-                  <FaTwitter />
-                </div>
+                <Link
+                  href="https://www.linkedin.com/in/hitesh-kumar-b9b3a2135/"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg text-[#dc143c] shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                </Link>
+                <Link href="https://github.com/Hiteshk369" target="_blank">
+                  <div className="rounded-full shadow-lg text-[#dc143c] shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/hitesh_kumar369/"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg text-[#dc143c] shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
+                    <FaInstagram />
+                  </div>
+                </Link>
+                <Link href="https://twitter.com/Hitesh39934681" target="_blank">
+                  <div className="rounded-full shadow-lg text-[#dc143c] shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
+                    <FaTwitter />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

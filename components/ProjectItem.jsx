@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ProjectItem = ({title, bgImage, techUsed, projectUrl}) => {
+const ProjectItem = ({ title, bgImage, techUsed, projectUrl }) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-3 group hover:bg-gradient-to-tr from-[#5651e5] to-[#709dff]">
       <Image
