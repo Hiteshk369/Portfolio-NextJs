@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose,  AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { useRouter } from "next/router";
-import Logo from '../public/assets/logo.png'
+import Logo from '../public/assets/Logo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
