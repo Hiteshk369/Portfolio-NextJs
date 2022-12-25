@@ -69,7 +69,7 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:text-[#dc143c] hover:font-bold font-medium font-poppins">
                 Contact
               </li>
@@ -131,7 +131,7 @@ const Navbar = () => {
                   PROJECTS
                 </li>
               </Link>
-              <Link href="/" onClick={()=>setNav(false)}>
+              <Link href="/#contact" onClick={()=>setNav(false)}>
                 <li className="my-6 text-base font-poppins font-medium">
                   CONTACT
                 </li>
