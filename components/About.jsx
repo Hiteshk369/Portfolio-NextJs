@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Profilepic from '../public/assets/Hitesh_img.png'
 
 const About = () => {
   return (
@@ -9,8 +10,8 @@ const About = () => {
           <p className="md:mx-0 mx-3 font-poppins uppercase text-xl tracking-widest">
             About
           </p>
-          <h2 className="md:mx-0 mx-3  font-poppins py-4">Who I Am</h2>
-          <p className="md:mx-0 mx-3 font-poppins py-2 text-gray-600 text-justify">
+          <h2 className=" font-poppins py-4">Who I Am</h2>
+          <p className="font-poppins py-2 text-gray-600 text-justify">
             &nbsp;&nbsp;&nbsp;&nbsp;Hello, my name is Hitesh. I am currently
             pursuing a Bachelor of Technology degree at Malla Reddy Institute of
             Technology in Hyderabad. In 2021, I began web development. I
@@ -29,7 +30,7 @@ const About = () => {
         <div className="flex justify-center items-center mt-2">
           <Image
             className=" md:h-64"
-            src="/../public/assets/Hitesh_img.png"
+            src={Profilepic}
             width="500"
             height="300"
             alt="image"
