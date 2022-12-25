@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose,  AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { useRouter } from "next/router";
+import Logo from '../public/assets/logo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           alt="/"
-          src="/../public/assets/Logo.png"
+          src={Logo}
           width="100"
           height="50"
         />
@@ -107,7 +108,7 @@ const Navbar = () => {
           <div>
             <div className="flex items-center justify-between w-full">
               <Image
-                src="/../public/assets/Logo.png"
+                src={Logo}
                 alt="/"
                 width="100"
                 height="40"
