@@ -10,7 +10,7 @@ const ProjectItem = ({ title, bgImage, techUsed, projectUrl }) => {
         src={bgImage}
         alt="GoodFood"
       />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] animate-pulse">
         <h3 className="font-poppins text-white text-2xl tracking-wider text-center">
           {title}
         </h3>

@@ -5,19 +5,17 @@ import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const LandingPage = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-6 flex justify-center items-center">
         <div>
           <h1 className="font-poppins py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#dc143c]">Hitesh</span>{" "}
           </h1>
-          <h1 className="font-poppins py-2 text-gray-700">
-            A MERN Stack Developer
-          </h1>
+          <h1 className="font-poppins py-2 text-gray-700">A Web Developer</h1>
           <p className="font-poppins py-4 text-gray-600 max-w-[70%] m-auto">
-            I&apos;m a MERN stack developer specializing in building exceptional
+            I&apos;m a Web developer specializing in building exceptional
             digital experiences. Currently, I&apos;m focused on building
             responsive front-end web applications with React and Next while
-            learning back-end technologies like Express and Nest.
+            learning back-end technologies like Node and Express.
           </p>
           <div className="flex items-center justify-between max-w-[420px] m-auto py-4">
             <Link
