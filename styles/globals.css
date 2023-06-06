@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --light: rgb(235, 67, 101);
+  --dark: rgb(10, 255, 157);
+}
+
 html,
 body {
   scroll-behavior: smooth !important;
@@ -12,7 +17,7 @@ body {
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply bg-[#ecf0f3] dark:bg-[#111111] text-[#1f2937] tracking-wide;
   }
 
   h1,
@@ -34,9 +39,5 @@ body {
 
   li {
     @apply cursor-pointer;
-  }
-
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-tr from-[#5651e5] to-[#7090ff];
   }
 }
