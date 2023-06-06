@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import { useTheme } from "next-themes";
 
 export const Reveal = ({ children, width = "fit-content" }) => {
   const mainControls = useAnimation();
@@ -8,8 +7,6 @@ export const Reveal = ({ children, width = "fit-content" }) => {
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
-  const { theme } = useTheme();
 
   useEffect(() => {
     if (isInView) {
@@ -42,27 +39,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
-        style={
-          theme === "light"
-            ? {
-                position: "absolute",
-                top: 4,
-                bottom: 4,
-                left: 0,
-                right: 0,
-                background: "var(--light)",
-                zIndex: 20,
-              }
-            : {
-                position: "absolute",
-                top: 4,
-                bottom: 4,
-                left: 0,
-                right: 0,
-                background: "var(--dark)",
-                zIndex: 20,
-              }
-        }
+        className="absolute top-4 bottom-4 left-[0] right-[0] bg-light dark:bg-dark z-20"
       />
     </div>
   );
