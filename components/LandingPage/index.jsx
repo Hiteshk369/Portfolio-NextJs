@@ -95,14 +95,20 @@ const LandingPage = () => {
             </motion.span>
           </div>
           <div className="flex items-center justify-center md:mt-6 mt-3 z-10">
-            <motion.button
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="relative border-[1.5px] rounded-[1.5px] border-light dark:border-dark bg-transparent py-2.5 px-5 font-medium text-light dark:text-dark cursor-pointer font-poppins transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-light dark:before:bg-dark before:transition-transform before:duration-300 before:content-[''] hover:text-white dark:hover:text-[#111111] before:hover:scale-x-100"
+            <Link
+              href="/HiteshKumarResume.pdf"
+              download="HiteshKumarResume"
+              target="_blank"
             >
-              <span>My Resume</span>
-            </motion.button>
+              <motion.button
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="relative border-[1.5px] rounded-[1.5px] border-light dark:border-dark bg-transparent py-2.5 px-5 font-medium text-light dark:text-dark cursor-pointer font-poppins transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-light dark:before:bg-dark before:transition-transform before:duration-300 before:content-[''] hover:text-white dark:hover:text-[#111111] before:hover:scale-x-100"
+              >
+                <span>My Resume</span>
+              </motion.button>
+            </Link>
           </div>
         </div>
       </div>
