@@ -28,10 +28,10 @@ export const ProjectModal = ({
 
   const content = (
     <div
-      className="fixed top-0 left-0 right-0 z-[100000] h-screen py-20 px-5 overflow-y-scroll flex justify-center cursor-pointer bg-black/[.54]"
+      className="fixed top-0 left-0 right-0 z-[100000] h-screen py-20 px-5 overflow-y-scroll flex justify-center cursor-pointer bg-black/[.54] backdrop-blur-md"
       onClick={() => setIsOpen(false)}
     >
-      <button className="w-10 h-10 flex items-center justify-center rounded-full bg-[#111111] dark:bg-white  border-none absolute top-15 right-10 font-bold cursor-pointer text-lg text-darkHeading dark:text-[#111111]">
+      <button className="w-8 h-8 z-[10000000] flex items-center justify-center rounded-full bg-light dark:bg-dark  border-none absolute top-16 lg:right-[18%] md:right-[3%] right-[1%] font-bold cursor-pointer text-lg text-darkHeading dark:text-[#111111]">
         <MdClose />
       </button>
 
