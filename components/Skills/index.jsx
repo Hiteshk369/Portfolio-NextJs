@@ -32,7 +32,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full z-10 lg:h-screen lg:px-36 md:px-24 md:py-6 py-16 mt-28 px-6"
+      className="w-full z-10 h-screen lg:px-36 md:px-24 md:py-6 py-16 mt-28 px-6"
     >
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <SectionHeader title="Skills" dir="r" />

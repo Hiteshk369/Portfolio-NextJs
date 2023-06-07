@@ -5,15 +5,17 @@ import GoodFoodImg from "./../../public/assets/projects/good.png";
 const Projects = () => {
   return (
     <div
-      className="w-full z-10 md:h-screen lg:px-36 md:px-24 md:py-6 py-6 px-6 mt-24 items-center"
+      className="w-full z-10 md:h-screen lg:px-36 md:px-24 md:py-6 px-6 mt-24 items-center"
       id="projects"
     >
-      <SectionHeader title="Projects" dir="1" />
+      <div className="max-w-[1240px] m-auto mt-16">
+        <SectionHeader title="Projects" dir="1" />
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
-        {projects.map((project) => {
-          return <ProjectItem key={project.title} {...project} />;
-        })}
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
+          {projects.map((project) => {
+            return <ProjectItem key={project.title} {...project} />;
+          })}
+        </div>
       </div>
     </div>
   );

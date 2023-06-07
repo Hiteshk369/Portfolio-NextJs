@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 30) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -41,8 +41,8 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed shadow-xl w-full md:h-20 h-16 z-[150] bg-[#ecf0f3] dark:bg-[#080808]"
-          : "fixed w-full  md:h-20 h-16 z-[150] bg-[#ecf0f3 dark:bg-[#080808]"
+          ? "fixed shadow-xl w-full md:h-20 h-16 z-[150] bg-[#ecf0f3] dark:bg-[#080808] "
+          : "fixed w-full  md:h-20 h-16 z-[150] bg-[#ecf0f3 dark:bg-[#080808] "
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -86,6 +86,11 @@ const Navbar = () => {
             <Link href="/#experience">
               <li className="ml-10 w-20 text-sm uppercase hover:text-light dark:hover:text-dark hover:font-bold font-medium font-poppins">
                 Experience
+              </li>
+            </Link>
+            <Link href="/#courses">
+              <li className="ml-10 w-16 text-sm uppercase hover:text-light dark:hover:text-dark hover:font-bold font-medium font-poppins">
+                Courses
               </li>
             </Link>
             <Link href="/#contact">
