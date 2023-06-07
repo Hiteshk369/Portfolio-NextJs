@@ -30,7 +30,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full z-10 h-screen lg:px-36 md:px-24 md:py-6 py-16 mt-16 px-6 flex items-center"
+      className="w-full z-10 md:h-screen lg:px-36 md:px-24 md:py-6 py-16 mt-16 px-6 flex items-center"
     >
       <div className="max-w-[1240px] m-auto mt-16">
         <SectionHeader title="About" dir="l" />

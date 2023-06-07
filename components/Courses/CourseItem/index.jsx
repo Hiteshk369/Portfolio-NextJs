@@ -27,7 +27,7 @@ const CourseItem = ({ course }) => {
       initial="hidden"
       animate={controls}
       transition={{ duration: 0.5, delay: 0.4 }}
-      className=" h-[340px] md:w-[280px] w-[calc(100%-40%)] relative shadow-lg shadow-gray-400 dark:shadow-[#111111] dark:bg-[#232323]"
+      className=" h-[340px] md:w-[280px] w-[calc(100%-15%)] relative shadow-lg shadow-gray-400 dark:shadow-[#111111] dark:bg-[#232323]"
     >
       <div className="absolute w-[100%] h-[35%] bg-gradient-to-tr dark:from-emerald-500 dark:to-dark from-red-400 to-light">
         <Reveal>
@@ -56,7 +56,7 @@ const CourseItem = ({ course }) => {
           />
         </motion.div>
       </div>
-      <div className="absolute bottom-[30%] w-full md:px-3 px-5">
+      <div className="absolute md:bottom-[30%] bottom-[28%] w-full md:px-3 px-5">
         <div className="flex items-center justify-center">
           <Reveal>
             <p className="dark:text-darkText font-poppins font-semibold ">
