@@ -35,7 +35,6 @@ const Navbar = () => {
     } else {
       document.documentElement.classList.remove("dark");
     }
-    console.log(theme);
   }, [theme]);
 
   return (
