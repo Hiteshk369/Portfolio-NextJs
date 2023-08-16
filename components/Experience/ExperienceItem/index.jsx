@@ -9,7 +9,7 @@ export const ExperienceItem = ({
   tech,
 }) => {
   return (
-    <div className="mb-10 pt-0 py-10 ">
+    <div className="mb-10 pt-0 py-3 ">
       <div className="flex items-center justify-between md:mb-5 mb-3">
         <Reveal>
           <span className="md:text-3xl text-lg  font-poppins font-bold dark:text-slate-200">
@@ -36,7 +36,7 @@ export const ExperienceItem = ({
         </Reveal>
       </div>
       <Reveal>
-        <p className="md:mb-7 mb-4 font-poppins text-gray-600 dark:text-darkText md:text-base text-sm">
+        <p className="md:mb-7 mb-4 font-poppins text-gray-600 dark:text-darkText md:text-sm text-[14px] [text-justify:distribute] [word-spacing:-2px] text-justify">
           {description}
         </p>
       </Reveal>

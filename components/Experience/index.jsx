@@ -24,8 +24,17 @@ const experience = [
     time: "Jan 2023 - May 2023",
     location: "India",
     description:
-      "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
+      "Designing and administering the MongoDB database that stores the application's data. Developing the back-end of the application using Node.js and Express. This involves creating RESTful APIs that allow the front-end to interact with the database. Developing the front-end of the application using React. This involves creating user interfaces, handling user interactions, and rendering dynamic data. Integrating the back-end and front-end of the application to ensure they work together seamlessly.",
     tech: ["React", "NodeJS", "MongoDB", "ExpressJS", "REST API", "Github"],
+  },
+  {
+    title: "Reseach Centre Imarat(RCI) - DRDO",
+    position: "Software Developer Intern",
+    time: "Mar 2023 - Jun 2023",
+    location: "Hyderabad",
+    description:
+      'Participated in the "Developing Debug utilities for robot automation" project. The project\'s primary objective was to develop a Python program with an emphasis on Matplotlib data visualization. Built an effective, efficient, and optimized Python code using a variety of Python modules.',
+    tech: ["Python"],
   },
 ];
 
