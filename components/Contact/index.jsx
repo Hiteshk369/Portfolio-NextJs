@@ -38,7 +38,7 @@ const Contact = () => {
           </p>
         </Reveal>
         <Reveal width="100%">
-          <Link href="mailto:hiteshk369@outlook.com">
+          <Link href="mailto:pvkhk369@gmail.com">
             <div className="flex font-figtree font-semibold  items-center dark:text-darkText justify-center gap-3 w-fit text-xl m-auto hover:text-light dark:hover:text-dark hover:duration-300 hover:ease-in">
               <AiFillMail size="2.4rem" />
               <span>pvkhk369@gmail.com</span>
