@@ -34,7 +34,7 @@ const projects = [
       "Admin dashboard for ecommerce platform built with Nextjs and Node",
     modalContent: (
       <>
-        <p className="text-[1rem] dark:text-dark">
+        <p className="text-[1rem] text-light dark:text-dark">
           Tech Stack: Typescript, Next, Node, Express, MongoDb, Tailwind, Redux,
           React Query, React Hook Form, JWT, Cloudinary
         </p>
@@ -71,7 +71,7 @@ const projects = [
       "Ecommerce, a full stack responsive ecommerce platform built using React and Node.",
     modalContent: (
       <>
-        <p className="text-[1rem] dark:text-dark">
+        <p className="text-[1rem] text-light dark:text-dark">
           Tech Stack: Typescript, React, Node, Express, MongoDb, Tailwind,
           Redux, React Query, React Hook Form, JWT, Cloudinary, Stripe
         </p>
@@ -114,7 +114,7 @@ const projects = [
       "Goodfood, a full stack responsive restaurant app built using React and Firebase.",
     modalContent: (
       <>
-        <p className="text-[1rem] dark:text-dark">
+        <p className="text-[1rem] text-light dark:text-dark">
           Tech Stack: React, Firebase, Tailwind, Redux, Google Maps API
         </p>
         <p>
