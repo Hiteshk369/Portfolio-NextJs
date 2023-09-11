@@ -30,7 +30,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full z-10 md:h-screen lg:px-36 md:px-24 md:py-6 py-16 mt-16 px-6 flex items-center"
+      className="w-full z-10 md:h-auto lg:h-auto xl:h-screen lg:px-36 md:px-24 md:py-6 py-16 mt-16 px-6 flex items-center"
     >
       <div className="max-w-[1240px] m-auto mt-16">
         <SectionHeader title="About" dir="l" />
@@ -58,27 +58,47 @@ const About = () => {
           </div>
           <div className="flex flex-col space-y-1 md:pt-0 pt-3">
             <Reveal>
-              <p className="font-poppins text-gray-600 dark:text-darkText font-normal text-justify">
-                &nbsp;&nbsp;&nbsp;&nbsp;Hi there, my name is Hitesh. I am a
-                Bachelor of Technology student at Malla Reddy Institute of
-                Technology in Hyderabad. I began web development in 2021. I
-                specialize in creating responsive front-end user interfaces that
-                link with APIs and other backend technologies.
+              <p className="font-figtree text-gray-600 dark:text-darkText font-normal text-justify">
+                &nbsp;&nbsp;&nbsp;&nbsp;Hello! I&apos;m Hitesh Kumar, a
+                passionate and dedicated computer science graduate from Malla
+                Reddy Institute of Technology with a Bachelor&apos;s degree in
+                Technology (B.Tech). My journey in the world of technology began
+                in 2021 when I started explore the vast and fascinating realm of
+                web development. Since then, I&apos;ve honed my skills and
+                evolved into a proficient Full Stack Developer.
               </p>
             </Reveal>
             <Reveal>
-              <p className="font-poppins text-gray-600 dark:text-darkText font-normal text-justify">
-                I enjoy learning new technology and recognize that there are
-                numerous methods to execute a task. Though I am most at ease
-                developing front-end applications with HTML, CSS, Javascript,
-                and React, I am a quick learner who can rapidly pick up new tech
-                stacks as needed. Being a great developer, in my opinion, is
-                more about choosing the appropriate tool for the job than it is
-                about knowing a specific language.
+              <p className="font-figtree text-gray-600 dark:text-darkText font-normal text-justify">
+                As a Full Stack Developer, I possess a diverse set of skills
+                that enable me to create dynamic and interactive web
+                applications. I have a deep passion for learning and staying
+                up-to-date with the latest trends and technologies in the
+                ever-evolving field of web development. I believe that
+                continuous learning is crucial for success in this industry, and
+                I&apos;m committed to expanding my knowledge and skill set.
               </p>
             </Reveal>
             <Reveal>
-              <div className="flex items-center pt-3 space-x-4">
+              <p className="font-figtree text-gray-600 dark:text-darkText font-normal text-justify">
+                In the future, I aspire to contribute to innovative and
+                impactful projects that leverage cutting-edge technology to
+                solve real-world problems. I&apos;m eager to collaborate with
+                like-minded individuals and organizations to create meaningful
+                digital experiences. While I&apos;m deeply passionate about
+                technology, I also enjoy a well-rounded life outside of the
+                computer screen. I love staying active, exploring the outdoors,
+                and spending time with friends and family.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className="font-figtree text-gray-600 dark:text-darkText font-normal text-justify">
+                Thank you for taking the time to get to know me. Let me tell you
+                a secret, I&apos;m Batman.
+              </p>
+            </Reveal>
+            <Reveal>
+              <div className="flex items-center md:pt-0 pt-3 space-x-4">
                 <p className="text-light dark:text-dark font-poppins text-base font-medium flex items-center gap-2">
                   My Links <AiOutlineArrowRight />
                 </p>

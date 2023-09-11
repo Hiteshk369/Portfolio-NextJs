@@ -28,7 +28,7 @@ export const ProjectModal = ({
 
   const content = (
     <div
-      className="fixed top-0 left-0 right-0 z-[100000] h-screen py-20 px-5 overflow-y-scroll flex justify-center cursor-pointer bg-black/[.54] backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-[100000] h-screen py-20 px-5 overflow-y-scroll scrollbar-hide flex justify-center cursor-pointer bg-black/[.54] backdrop-blur-md"
       onClick={() => setIsOpen(false)}
     >
       <button className="w-8 h-8 z-[10000000] flex items-center justify-center rounded-full bg-light dark:bg-dark  border-none absolute top-16 lg:right-[18%] md:right-[3%] right-[1%] font-bold cursor-pointer text-lg text-darkHeading dark:text-[#111111]">
@@ -44,17 +44,14 @@ export const ProjectModal = ({
         <Image
           src={imgSrc}
           alt={`An image of the ${title} project.`}
-          className="shadow-lg shadow-gray-400 w-full h-96"
+          className="shadow-lg shadow-gray-400 w-full md:h-96 h-56"
         />
-        <div className="p-10 bg-slate-100 dark:bg-[#232323] ">
-          <h4 className="text-3xl font-poppins dark:text-darkHeading">
+        <div className="md:p-10 p-5 bg-slate-100 dark:bg-[#232323] ">
+          <h4 className="md:text-3xl text-xl font-poppins dark:text-darkHeading">
             {title}
           </h4>
-          <div className="flex flex-wrap gap-5 text-lg font-medium text-light dark:text-dark font-poppins mt-1 mr-0 ml-0 my-1">
-            {tech.join(" - ")}
-          </div>
 
-          <div className="flex flex-col gap-2 font-poppins text-sm text-gray-600 dark:text-darkText">
+          <div className="flex pt-3  flex-col gap-2 font-figtree text-sm text-gray-600 dark:text-darkText">
             {modalContent}
           </div>
 

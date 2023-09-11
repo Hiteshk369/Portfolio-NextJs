@@ -36,7 +36,7 @@ export const ExperienceItem = ({
         </Reveal>
       </div>
       <Reveal>
-        <p className="md:mb-7 mb-4 font-poppins text-gray-600 dark:text-darkText md:text-sm text-[14px] [text-justify:distribute] [word-spacing:-2px] text-justify">
+        <p className="md:mb-7 mb-4 font-figtree text-gray-600 dark:text-darkText md:text-sm text-[0.8rem] text-justify [text-align-last: left] [text-justify:distribute]">
           {description}
         </p>
       </Reveal>

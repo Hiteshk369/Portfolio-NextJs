@@ -23,24 +23,25 @@ const LandingPage = () => {
               <h1 className="text-light dark:text-dark font-poppins">Hitesh</h1>
             </Reveal>
           </div>
-          <motion.h1
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="font-poppins py-2 text-gray-700 dark:text-[#ebecf3]"
-          >
-            A Web Developer
-          </motion.h1>
           <motion.p
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="font-poppins py-4 text-gray-600 dark:text-slate-400 max-w-[70%] m-auto"
+            className="font-poppins md:py-6 py-4 md:text-5xl text-2xl font-semibold text-gray-700 dark:text-[#ebecf3]"
+          >
+            A Full Stack Developer
+          </motion.p>
+          <motion.p
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="font-figtree md:text-base text-sm py-4 text-gray-600 dark:text-slate-400 max-w-[70%] m-auto"
           >
             I&apos;m a Web developer specializing in building exceptional
             digital experiences. Currently, I&apos;m focused on building
-            responsive front-end web applications with React and Next while
-            learning back-end technologies like Node and Express.
+            responsive front-end web applications with React and Next with
+            back-end technologies like Node and Express while learning
+            Microservices with Docker and Kubernetes.
           </motion.p>
           <div className="flex items-center justify-between max-w-[420px] m-auto py-4">
             <motion.span

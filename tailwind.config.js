@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: "poppins",
+        figtree: "figtree",
       },
       keyframes: {
         top: {
@@ -27,5 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

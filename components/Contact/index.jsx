@@ -5,7 +5,7 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <section
-      className="w-full z-10 md:h-screen lg:px-36 md:px-24 md:py-6 py-6 px-6 flex items-center"
+      className="w-full z-10 md:h-auto lg:h-screen lg:px-36 md:px-24 md:py-6 py-6 px-6 flex items-center"
       id="contact"
     >
       <div className="max-w-[700px] m-auto rounded-2xl">
@@ -15,7 +15,7 @@ const Contact = () => {
           </h4>
         </Reveal>
         <Reveal width="100%">
-          <p className="text-center text-lg font-poppins font-normal my-10 mx-0 dark:text-darkText">
+          <p className="text-center text-lg font-figtree font-normal my-10 mx-0 dark:text-darkText">
             Shoot me an email if you want to connect! You can also find me on{" "}
             <Link
               className="text-light dark:text-dark hover:underline"
@@ -39,15 +39,15 @@ const Contact = () => {
         </Reveal>
         <Reveal width="100%">
           <Link href="mailto:hiteshk369@outlook.com">
-            <div className="flex font-poppins font-semibold  items-center dark:text-darkText justify-center gap-3 w-fit text-xl m-auto hover:text-light dark:hover:text-dark hover:duration-300 hover:ease-in">
+            <div className="flex font-figtree font-semibold  items-center dark:text-darkText justify-center gap-3 w-fit text-xl m-auto hover:text-light dark:hover:text-dark hover:duration-300 hover:ease-in">
               <AiFillMail size="2.4rem" />
-              <span>hiteshk369@outlook.com</span>
+              <span>pvkhk369@gmail.com</span>
             </div>
           </Link>
         </Reveal>
         <Reveal width="100%">
           <Link href="https://github.com/Hiteshk369" target="_blank">
-            <div className="flex font-poppins font-semibold  items-center dark:text-darkText justify-center gap-3 w-fit text-xl m-auto hover:text-light dark:hover:text-dark hover:duration-300 hover:ease-in">
+            <div className="flex font-figtree font-semibold  items-center dark:text-darkText justify-center gap-3 w-fit text-xl m-auto hover:text-light dark:hover:text-dark hover:duration-300 hover:ease-in">
               <AiFillGithub size="2.4rem" />
               <span>Hiteshk369</span>
             </div>

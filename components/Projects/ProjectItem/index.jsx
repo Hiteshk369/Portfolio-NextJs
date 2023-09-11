@@ -51,7 +51,7 @@ export const ProjectItem = ({
           className="w-full aspect-video cursor-pointer relative overflow-hidden rounded-xl bg-[#232323]"
         >
           <Image
-            className="w-[40%] absolute bottom-[-65%] left-[-2%] rounded-md transition-all translate-y-[-50%] translate-x-[20%]"
+            className="w-[40%] absolute top-[67%] left-[-2%] rounded-md transition-all translate-y-[-50%] translate-x-[20%]"
             style={{
               width: hovered ? "80%" : "75%",
               rotate: hovered ? "2deg" : "0deg",
@@ -63,7 +63,7 @@ export const ProjectItem = ({
         <div className="my-6 mx-0">
           <Reveal width="100%">
             <div className="flex items-center gap-5">
-              <h4 className="font-bold font-poppins text-2xl dark:text-darkHeading flex-shrink-0 max-w-[calc(100%-150px)]">
+              <h4 className="font-bold font-poppins md:text-2xl text-lg dark:text-darkHeading flex-shrink-0 max-w-[calc(100%-150px)]">
                 {title}
               </h4>
               <div className="w-full h-[1px] bg-gray-700 dark:bg-gray-300 opacity-30" />
@@ -81,15 +81,15 @@ export const ProjectItem = ({
             </div>
           </Reveal>
           <Reveal>
-            <div className="flex flex-wrap gap-5 text-light dark:text-dark font-poppins text-lg font-medium my-1 mx-0">
+            <div className="flex flex-wrap gap-5 text-light dark:text-dark font-poppins md:text-lg text-sm font-medium my-1 mx-0">
               {tech.join(" - ")}
             </div>
           </Reveal>
           <Reveal>
-            <p className="font-normal text-gray-600 font-poppins">
+            <p className="font-normal md:text-base text-xs text-gray-400 font-figtree">
               {description}{" "}
               <span
-                className=" inline-block text-light dark:text-dark text-sm cursor-pointer font-medium hover:underline hover:duration-300 hover:transition-all"
+                className=" inline-block text-light dark:text-dark md:text-sm text-xs cursor-pointer font-medium hover:underline hover:duration-300 hover:transition-all"
                 onClick={() => setIsOpen(true)}
               >
                 Learn more {">"}

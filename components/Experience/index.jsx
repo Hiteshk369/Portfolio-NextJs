@@ -4,7 +4,7 @@ import { ExperienceItem } from "./ExperienceItem";
 const Experience = () => {
   return (
     <section
-      className="w-full z-10 md:h-screen lg:px-36 md:px-24 md:py-6 py-6 px-6"
+      className="w-full z-10 md:h-auto lg:h-auto xl:h-screen lg:px-36 md:px-24 md:mt-96 lg:mt-[500px] py-6 px-6"
       id="experience"
     >
       <div className="max-w-[1240px] m-auto mt-16">
