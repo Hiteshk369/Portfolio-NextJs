@@ -62,7 +62,7 @@ const About = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;Hello! I&apos;m Hitesh Kumar, a
                 passionate and dedicated computer science graduate from Malla
                 Reddy Institute of Technology with a Bachelor&apos;s degree in
-                Technology (B.Tech), currently pursuing my Master's in
+                Technology (B.Tech), currently pursuing my Master&apos;s in
                 Information Systems at Saint Louis University. My journey in the
                 world of technology began in 2021 when I started to explore the
                 vast and fascinating realm of web development. Since then,
